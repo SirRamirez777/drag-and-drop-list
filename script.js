@@ -6,7 +6,7 @@ let isDragging = false;
       const container = document.querySelector(".container");
       container.style.width = container.offsetWidth + "px";
       container.style.height = container.offsetHeight + "px";
-
+      //Click and drag
       document.addEventListener("mousedown", (e) => {
         const item = e.target.closest(".item");
         if (item) {
@@ -70,3 +70,7 @@ let isDragging = false;
           sibiling.style.marginTop = "10px";
         });
       });
+
+      function saveData(){
+        localStorage.setItem("data", listContainer.innerHTML);
+      }
