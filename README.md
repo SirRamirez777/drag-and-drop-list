@@ -1,2 +1,2 @@
-Click > Drag and Drop an item #js..
+Click > Drag and Drop an item #js...
 /
